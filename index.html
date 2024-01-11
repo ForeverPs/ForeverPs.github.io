@@ -137,8 +137,14 @@
         <source src="./static/videos/result.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">GPE</span> detects highlights from raw videos.
+      <div class="content has-text-justified">
+          <p>
+            GPE detects highlights from raw videos. 
+            First, we split the raw video into several disjoint clips using the GEBD (generic event boundary detection) method. 
+            Following that, in each video clip, we use GPE to assign highlight scores to all frames. 
+            Finally, we extract the shortest continuous video clip whose overall score surpasses 40% of the whole video.
+          </p>
+      </div>
       </h2>
     </div>
   </div>
